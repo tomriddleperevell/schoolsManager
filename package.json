@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomriddleperevell/schools.git"
+    "url": "git+https://github.com/tomriddleperevell/schoolsManager.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tomriddleperevell/schools/issues"
+    "url": "https://github.com/tomriddleperevell/schoolsManager/issues"
   },
-  "homepage": "https://github.com/tomriddleperevell/schools#readme",
+  "homepage": "https://github.com/tomriddleperevell/schoolsManager#readme",
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
