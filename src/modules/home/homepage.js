@@ -39,7 +39,16 @@ export class HomePage extends React.Component {
 		console.log(searchStr)
 		// ეს უბრალოდ რომ სერჩის შედეგები სულ ერთიდაიგივე არ იყოს
 		let kindOfHash = (filters.types.filter(x=>x.checked).length + filters.city.charCodeAt(0) + searchStr.length + 2) % 3 + 1;
-		fetch(`/api/search/schools_${kindOfHash}.json`)
+		fetch(`/api/search/schools_${kindOfHash}.json` 
+			// ბექის არსებობის შემთხვევაში...
+			// ,{
+			// 	method: 'post',
+			// 	body: JSON.stringify({
+			// 		str: searchStr,
+			// 		filters: filters
+			// 	})
+			// }
+			)
 			.then(res=>res.json())
 			.then(schools => {
 				console.log(schools)

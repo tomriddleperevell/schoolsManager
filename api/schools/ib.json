@@ -1,0 +1,8 @@
+{
+	"name": "აიბი სკოლა",
+	"id": "ib",
+	"imgSrc": "/assets/imgs/ib.jpg",
+	"description": "თბილისის კერძო სკოლა",
+	"schoolTypes": ["საშუალო"],
+	"location": "თბილისი"
+}

@@ -101,6 +101,14 @@ export class ClassPage extends React.Component {
 				method: 'post',
 				body: JSON.stringify(this.state.schedule)
 			})
+			.then(resp => resp.json())
+			.then(resp => {
+				if(resp.result == true)
+					alert('შეინახა');
+			})
+			.catch(err => {
+				alert('ბექი რომ მქონდეს შეინახავდა');
+			})
 	}
 
 	render() {

@@ -17,7 +17,7 @@ export function SchoolInfo(props) {
 				))}
 			</div>
 			<div className="details inseted">
-				<p>{school.location}</p>
+				<p><span className="material-icons">public</span>{school.location}</p>
 			</div>
 		</div>
 	);

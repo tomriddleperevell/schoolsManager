@@ -1,0 +1,8 @@
+{
+	"name": "ევროპული სკოლა",
+	"id": "evropuli-skola",
+	"imgSrc": "/assets/imgs/evrop.png",
+	"description": "ქუთაისის ფიზიკა-მათემატიკური სკოლა",
+	"schoolTypes": ["დაწყებითი", "საშუალო"],
+	"location": "თბილისი"
+}

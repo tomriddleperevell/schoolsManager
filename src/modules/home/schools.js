@@ -17,7 +17,7 @@ export function SchoolItem(props) {
 				</div>
 				<div className="right">
 					<div className="details">
-						<p>{school.location}</p>
+						<p>{school.location}<span className="material-icons">public</span></p>
 					</div>
 				</div>
 			</div>
