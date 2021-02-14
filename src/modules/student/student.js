@@ -26,20 +26,6 @@ export class StudentPage extends React.Component {
 				alert("no internet connection")
 			})
 	}
-// {
-//   "name": "ალეკო გიორგაძე",
-//   "id": 1,
-//   "imgSrc": "/assets/imgs/tbilisi-state-university-logo-png-transparent.png",
-//   "GPA": 10,
-//   "birthday": "2005, 30 იანვარი",
-//   "class": "9-A",
-//   "comments": [
-//     "სამაგალითო ბიჭია",
-//     "ცოტა უხასიათო",
-//     "დოტას თამაშობს თორე კაი ბიჭია"
-//   ]
-// }
-
 
 	render() {
 		const { isLoaded, student } = this.state;

@@ -3,7 +3,8 @@ import { render } from "react-dom";
 import { HomePage } from "./modules/home/homepage";
 import { SchoolPage } from "./modules/school/schoolpage";
 import { StudentPage } from "./modules/student/student";
-import { TeacherPage } from "./modules/teacher/teacher"
+import { TeacherPage } from "./modules/teacher/teacher";
+import { ClassPage } from "./modules/class/class";
 import Navigo from "navigo";
 import './style.css';
 // import './reset.css';
@@ -27,6 +28,9 @@ router
 	})
 	.on('/student/:id', ({ data }) => {
 		render(<StudentPage id={data.id} />, document.getElementById("root"));
+	})
+	.on('/classes/:id', ({ data }) => {
+		render(<ClassPage id={data.id} />, document.getElementById("root"));
 	})
 	.on((match) => {
 		console.log(match);

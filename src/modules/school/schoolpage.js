@@ -1,7 +1,7 @@
 import React from 'react';
 import {SchoolInfo} from './schoolinfo';
 import {TabSwitcher} from './tabswitcher';
-import {UsersList} from './userslist'
+import {ItemList} from './itemlist'
 import './schoolpage.css';
 
 export class SchoolPage extends React.Component {
@@ -10,7 +10,7 @@ export class SchoolPage extends React.Component {
 		this.state = {
 			isLoaded: false,
 			schoolInfo: {},
-			users: [],
+			data: [],
 			tab: props.tab || 'teachers'
 		};
 		this.handleTabChange = this.handleTabChange.bind(this);
@@ -43,11 +43,15 @@ export class SchoolPage extends React.Component {
 		if(tab === 'students') {
 			fetch('/api/users/students.json')
 				.then(r=>r.json())
-				.then(users=>this.setState({users: users}))
+				.then(users=>this.setState({data: users}))
 		} else if( tab === 'teachers' ){
 			fetch('/api/users/teachers.json')
 				.then(r=>r.json())
-				.then(users=>this.setState({users: users}))
+				.then(users=>this.setState({data: users}))
+		} else if( tab === 'classes' ) {
+			fetch('/api/classes/classes.json')
+				.then(r=>r.json())
+				.then(classes=>this.setState({data: classes}))
 		}
 	}
 
@@ -66,11 +70,7 @@ export class SchoolPage extends React.Component {
 	render() {
 		const { isLoaded, schoolInfo } = this.state;
 		if(!isLoaded) return null;
-		let tabContent;
-		if(this.state.tab === 'students' || this.state.tab === 'teachers') {
-			tabContent = <UsersList tab={this.state.tab} users={this.state.users} />
-		}
-
+		
 		return <div className="content-container">
 		    <div className="content">
 		    	<div className="content-left">
@@ -78,7 +78,7 @@ export class SchoolPage extends React.Component {
 		    	</div>
 		    	<div className="content-right">
 		    		<TabSwitcher value={this.state.tab} onTabChange={this.handleTabChange} />
-		    		{tabContent}
+		    		<ItemList tab={this.state.tab} itemDatas={this.state.data} />
 		    	</div>
 		    </div>
 	    </div> 
