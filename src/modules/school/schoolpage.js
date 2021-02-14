@@ -6,12 +6,12 @@ import './schoolpage.css';
 
 export class SchoolPage extends React.Component {
 	constructor(props) {
-		super(props)
+		super(props);
 		this.state = {
 			isLoaded: false,
 			schoolInfo: {},
 			users: [],
-			tab: 'teachers'
+			tab: props.tab || 'teachers'
 		};
 		this.handleTabChange = this.handleTabChange.bind(this);
 	}
@@ -52,7 +52,15 @@ export class SchoolPage extends React.Component {
 	}
 
 	handleTabChange(newTab) {
-		this.setState({tab: newTab}, ()=>{this.fetchTabContent()})
+		this.setState({tab: newTab}, ()=>{this.fetchTabContent()});
+		let oldLink = location.hash;
+		let linkParts = oldLink.split('?');
+		if(linkParts.length < 2) linkParts.push('');
+		linkParts[1] = `?tab=${newTab}`;
+		let newLink = linkParts.join('');
+		location.hash = newLink;
+		// history.pushState({}, '', newLink); 
+		// console.log(oldLink.split('?'));
 	}
 
 	render() {

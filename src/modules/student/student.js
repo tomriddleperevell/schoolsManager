@@ -47,7 +47,7 @@ export class StudentPage extends React.Component {
 		console.log(student)
 		return <div className="content-container">
 			<div className="content-nosidebar student-page">
-				<a href={`#/school/${student.school}`}>Back to school</a>
+				<a href={`#/school/${student.school}?tab=students`}>Back to school</a>
 				<img src={student.imgSrc} alt="student image" />
 				<h3>სახელი: {student.name}</h3>
 				<p>GPA: {student.GPA}</p>
@@ -55,7 +55,7 @@ export class StudentPage extends React.Component {
 				<p>კლასი: {student.class}</p>
 				<p>მასწავლებლის კომენატრები:</p>
 				<ul>
-					{student.comments.map(comment => <li>{comment}</li>)}
+					{student.comments.map(comment => <li key={comment}>{comment}</li>)}
 				</ul>
 			</div>
 	    </div> 

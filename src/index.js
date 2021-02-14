@@ -20,7 +20,7 @@ router
 		console.log(data); // { id: 'xxx', action: 'save' }
 		console.log(params); // { m: "n", k: "z" }
 		console.log(queryString); // "m=n&k=z"
-		render(<SchoolPage schoolid={data.schoolid} params={params}/>, document.getElementById("root"));
+		render(<SchoolPage tab={params?.tab}schoolid={data.schoolid} params={params}/>, document.getElementById("root"));
 	})
 	.on('/teacher/:id', ({ data }) => {
 		render(<TeacherPage id={data.id} />, document.getElementById("root"));

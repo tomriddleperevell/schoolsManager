@@ -40,7 +40,7 @@ export class TeacherPage extends React.Component {
 				<p>პირადი ნომერი: {teacher.pn}</p>
 				<p>გავკეთილები რომლებსაც ასწავლის:</p>
 				<ul>
-					{teacher.classes.map(course => <li>{course}</li>)}
+					{teacher.classes.map(course => <li key={course}>{course}</li>)}
 				</ul>
 			</div>
 	    </div> 
