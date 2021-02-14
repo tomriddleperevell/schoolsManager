@@ -1,0 +1,41 @@
+{
+  "name": "schools",
+  "version": "1.0.0",
+  "description": "### ეს არის პროექტი სადაც მომხმარებელს ექნება შესაძლებლობა დაათვალიეროს ქვეყნის მასშტაბით არსებული სკოლები, ნახოს მათი ზოგადი დახასიათება და ასევე დეტალური ინფორმაცია ### ეს ვებ გვერდი გათვლილია განათლების სამინისტროსთვის და არ უნდა იყოს ხელმისაწვდომი რიგითი მოქალაქისთვის რადგან ინახავს პირად ინფორმაციას ### ვებ გვერდს ექნება შემდეგი გვერდები   - ლოგინ პეიჯი(რეგისტრაცია არ იქნება, ახალი მომხმარებელი დაემატება უკვე არსებული მომხმარებლის მიერ)   - მთავარი გვერდი:     - საძიებო პანელი რომელის საშუალებას მოგვცემს მოვძებნოთ სკოლები ქალაქების, სახელების, ნომრების და სხვა პარამეტრების საშუალებით     - სკოლების სია რომელის ძებნის შედეგად დაბრუნდება და მასზე დაკლიკების შედეგად გადავა ახალ გვერდზე   - სკოლის გვერდი:     - სკოლის სურათი, აღწერილობა და სხვადასხვა მონაცემები     - მასწავლებლების სია რომელზე დაჭერითაც გადადიხარ მასწავლებლის გვერდზე     - მოსწავლეების სია რომელზე დაჭერითაც გადადიხარ მოსწავლის გვერდზე",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "start": "webpack serve --mode development --open 'Firefox'",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomriddleperevell/schools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomriddleperevell/schools/issues"
+  },
+  "homepage": "https://github.com/tomriddleperevell/schools#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "@types/navigo": "^7.0.1",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "html-webpack-plugin": "^5.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "navigo": "^8.8.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

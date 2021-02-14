@@ -1,0 +1,9 @@
+.teacher-page {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px !important;
+}
+
+.teacher-page img {
+	height: 20vh;
+}

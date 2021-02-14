@@ -1,0 +1,30 @@
+.filters-container {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	line-height: 2.5rem;
+	font-size: 1.2rem;
+}
+
+.filters-container label {
+	padding-left: 0.5rem;
+}
+
+.filters-container h1 {
+	color: var(--color-text-primary-light);
+}
+
+.checkboxes, .radios {
+	display: flex;
+	flex-direction: column;
+}
+
+.checkbox, .radio {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox input {
+	transform: scale(1.5);
+}
+

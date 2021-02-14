@@ -1,0 +1,8 @@
+{
+	"name": "თსუ",
+	"id": "tsu",
+	"imgSrc": "/assets/imgs/tbilisi-state-university-logo-png-transparent.png",
+	"description": "თბილისის სახელმწიფო უნივერსიტეტი არის საუკეთესო სკოლა მთელ მსოფლიოში",
+	"schoolTypes": ["მაღალი"],
+	"location": "რუსთავი"
+}

@@ -1,0 +1,9 @@
+.student-page {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px !important;
+}
+
+.student-page img {
+	height: 20vh;
+}

@@ -1,0 +1,16 @@
+[
+	{
+		"name": "ევროპული სკოლა",
+		"id": "evropuli-skola",
+		"imgSrc": "/assets/imgs/evrop.png",
+		"schoolTypes": ["დაწყებითი", "საშუალო"],
+		"location": "თბილისი"
+	},
+	{
+		"name": "დემირელის სკოლა",
+		"id": "demirel",
+		"imgSrc": "/assets/imgs/tbilisi-state-university-logo-png-transparent.png",
+		"schoolTypes": ["საშუალო", "დაწყებითი"],
+		"location": "რუსთავი"
+	}
+]

@@ -1,0 +1,23 @@
+.user-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.user-list > * {
+	margin: 20px;
+}
+
+.user-item {
+	position: relative;
+	display: flex;
+	text-decoration: none;
+	font-size: 1rem;
+	/*height: 15vh;*/
+	/*max-height: 80px;*/
+	flex-direction: column;
+	/*padding: 15px;*/
+}
+.user-item p {
+	padding-left: 10px;
+}
+

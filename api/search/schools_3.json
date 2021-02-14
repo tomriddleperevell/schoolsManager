@@ -1,0 +1,16 @@
+[
+	{
+		"name": "რაზმაძის სკოლა",
+		"id": "razmadze",
+		"imgSrc": "/assets/imgs/tbilisi-state-university-logo-png-transparent.png",
+		"schoolTypes": ["მაღალი", "საშუალო"],
+		"location": "რუსთავი"
+	},
+	{
+		"name": "დემირელის სკოლა",
+		"id": "demirel",
+		"imgSrc": "/assets/imgs/tbilisi-state-university-logo-png-transparent.png",
+		"schoolTypes": ["საშუალო", "დაწყებითი"],
+		"location": "რუსთავი"
+	}
+]
