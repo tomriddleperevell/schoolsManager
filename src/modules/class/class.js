@@ -97,6 +97,10 @@ export class ClassPage extends React.Component {
 
 	submitShedule() {
 		console.log(this.state.schedule)
+		fetch('/api/updateShedule', {
+				method: 'post',
+				body: JSON.stringify(this.state.schedule)
+			})
 	}
 
 	render() {
