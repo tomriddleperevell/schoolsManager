@@ -1,9 +1,9 @@
 {
-	"name": "გიო გიორგაძე",
+	"name": "ქეთი ქეთიძე",
 	"id": 1,
 	"school": "tsu",
-	"imgSrc": "/assets/imgs/img_2.jpg",
-	"GPA": 9.5,
+	"imgSrc": "/assets/imgs/img_1.jpg",
+	"GPA": 10,
 	"birthday": "2005, 30 იანვარი",
 	"class": "9-A",
 	"comments": ["სამაგალითო ბიჭია", "ცოტა უხასიათო", "დოტას თამაშობს თორე კაი ბიჭია"]

@@ -3,6 +3,7 @@ body, html {
 	padding: 0;
 	text-decoration: none;
 	list-style: none;
+	overflow-y: scroll; /* Show vertical scrollbar */
 }
 
 * {

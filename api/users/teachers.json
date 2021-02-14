@@ -2,16 +2,16 @@
 	{
 		"name": "შოთა ღვინეფაძე",
 		"id": 1,
-		"description": "მეთოდოლოგიები, აბსტრაქციები, open source..."
+		"description": "ქართული, ბუნება"
 	},
 	{
-		"name": "ოთარ ჩეკურიშვილი",
+		"name": "ჯონდი ჯონდიშვილი",
 		"id": 2,
-		"description": "ვებ დეველოპმენტ"
+		"description": "მათემატიკა, ფიზიკა"
 	},
 	{
 		"name": "გიორგი კობიაშვილი",
 		"id": 3,
-		"description": "OS, nand2tetris..."
+		"description": "ფიზკულტურა"
 	}
 ]

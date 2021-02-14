@@ -4,6 +4,16 @@ import {SchoolFilters} from './filters';
 import './home.css';
 
 
+export function SearchBar(props) {
+	return <div className="home-search">
+		<input
+			type="text" 
+			placeholder="ჩაწერეთ საძიებო სიტყვა..."
+			value={props.value} 
+			onChange={(e)=>{props.onChange(e.target.value)}} />
+	</div>
+}
+
 
 export class HomePage extends React.Component {
 	constructor(props) {
@@ -18,6 +28,7 @@ export class HomePage extends React.Component {
 			searchStr: '',
 		}
 		this.handleFilterUpdate = this.handleFilterUpdate.bind(this);
+		this.handleSearchStrUpdate = this.handleSearchStrUpdate.bind(this);
 		this.searchSchools = this.searchSchools.bind(this);
 	}
 
@@ -27,7 +38,7 @@ export class HomePage extends React.Component {
 		console.log(filters)
 		console.log(searchStr)
 		// ეს უბრალოდ რომ სერჩის შედეგები სულ ერთიდაიგივე არ იყოს
-		let kindOfHash = (filters.types.filter(x=>x.checked).length + filters.city.charCodeAt(0) + searchStr.length ) % 3 + 1;
+		let kindOfHash = (filters.types.filter(x=>x.checked).length + filters.city.charCodeAt(0) + searchStr.length + 2) % 3 + 1;
 		fetch(`/api/search/schools_${kindOfHash}.json`)
 			.then(res=>res.json())
 			.then(schools => {
@@ -62,7 +73,12 @@ export class HomePage extends React.Component {
 		if(!isLoaded)return null
 		return <div className="content-container">
 		    <div className="content">
-		    	<div className="content-header"/>
+		    	<div className="content-header">
+		    		<h1>School Management System</h1>
+		    		<div className="searh-container">
+		    			<SearchBar value={this.state.searchStr} onChange={this.handleSearchStrUpdate} />
+		    		</div>
+		    	</div>
 		    	<div className="content-left">
 		    		<SchoolFilters onUpdate={this.handleFilterUpdate}/>
 		    	</div>

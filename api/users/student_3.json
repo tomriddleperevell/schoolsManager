@@ -1,0 +1,10 @@
+{
+	"name": "ბაჩო ბაჩოძე",
+	"id": 1,
+	"school": "tsu",
+	"imgSrc": "/assets/imgs/img_1.jpg",
+	"GPA": 2,
+	"birthday": "2002, 30 იანვარი",
+	"class": "9-A",
+	"comments": ["ტიპიური ოროსანი"]
+}
